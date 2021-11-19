@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion</title>
+    <style>
+        body{
+            background-color: rgb(231, 231, 197);
+            margin: 30px;
+        }
+       P{
+           font-family: cursive;
+           color:rgb(168, 8, 8);
+       }
+        .head{
+            text-align: center;
+            background-color: #C0C0C0;
+            text-transform: uppercase;
+            color:rgb(110, 67, 2);
+        
+        }
+      /* .left{
+             display: flex;
+             justify-content: space-around;
+      }*/
+       .btn{
+        font-size: 30px;
+        padding:15px;
+        background-color:lightcyan;
+        cursor: pointer;
+        color: darkblue;
+        border: 2px solid gray;
+        border-radius: 15px;
+        margin: 10px;
+        width:250px;
+    }
+        .btn:hover{
+        background-color:rgb(6, 6, 107);
+        color: lightcyan;
+        border:1px solid black;
+    }
+        .btn:focus{
+        background-color: rgb(6, 6, 107);
+        color: lightcyan;
+        border:1px solid black;
+    }
+       .image{
+           height: 350px;
+           width: 600px;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 25px;
+           border: 4px solid #C0C0C0;
+           border-radius: 10px;
+           display:none;
+           
+       }
+       .align{
+           display: flex;
+           align-items: center;
+       }
+    </style>
+</head>
+<body>
+    <font size=5>
+        <h1 class="head">Conclusion</h1>
+        <p>Satellite communication helped Industry to accelerate Business transformation. New mobile applications are built using Satellite technology, and it connects all the stakeholders with Business.</p>
+        <h2 class="head">Some famous satellites</h2>
+        <div class="align">
+           <div class="left">
+                <button onclick="myfun()" class="btn">Sputnik 1</button><br>
+                <button onclick="myfun2()" class="btn">Explorer 1</button><br>
+                <button onclick="myfun3()" class="btn">Echo 1</button><br>
+                <button onclick="myfun4()" class="btn">Satcom 1</button><br>
+            </div>
+            
+                <img src="sputnik1.jpg" class="image" id="image">
+            
+        </div>
+        </font>
+       <script>
+           function myfun(){
+            document.getElementById('image').src='sputnik1.jpg'; 
+            document.getElementById('image').style.display='block';
+           }
+        function myfun2(){
+            document.getElementById('image').src='exp1.jpg'; 
+            document.getElementById('image').style.display='block';
+
+        }
+        function myfun3(){
+            document.getElementById('image').src='echo_satellite_900px.jpg'; 
+            document.getElementById('image').style.display='block';
+
+        }
+        function myfun4(){
+            document.getElementById('image').src='Satcom_1.jpg'; 
+            document.getElementById('image').style.display='block';
+
+        }
+       </script>
+        
+</body>
+</html>
